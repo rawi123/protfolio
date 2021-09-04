@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+:root{
+    --primary-color:#B1EFF8;
+    --secondary-color:#F7F9FC;
+    --primary-dark:#12D6F0;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+html{
+    font-size: 10px;
+}
+#website{
+    display: flex;
+}
+/* utilites */
+.container{
+    width:  calc(100vw - 30rem);
+}
+.current{
+    transition: all 1s ease;
+    background-color: var(--primary-color);
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{ color:#555555 ;
+text-decoration: none;}
+ul{
+    list-style: none;
+}
+.xl-head{
+    font-size: 6rem;
+}
+.l-head{
+    font-size: 3.5rem;
+}
+.m-head{
+    font-size: 2rem;
+}
+.p-1{padding: 1rem;}
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+.flex-columns{flex-direction: column;}
+.flex-rows{flex-direction: row;}
+.white{color: #fff;}
+.btn{
+    padding: 1.3rem 2rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+    border-radius:2rem;
+    background: var(--primary-color);
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background: #12D6F0;
+}
+.card{
+    padding: 2rem;   
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+}
+.card p{
+    color: #555555;
+}
+.card h3{
+    padding: 2rem 0;
+    font-size:  2.6rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+.side-border{
+    position: relative;
+}
+.side-border::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 3px solid var(--primary-color);
+    border-right: 3px solid var(--primary-color);
+    width: 3vw;
+    height: 3vw;
+}
+.side-border::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 3px solid var(--primary-color);
+    border-left: 3px solid var(--primary-color);
+    width: 3vw;
+    height: 3vw;
+}
+.hobby{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hobby p{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+/* project page cards */
+.project-card{
+    transition: all 0.4s ease;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+    border-radius: .5rem;
+}
+.project-card>*:first-child{
+    width: 100%;
+    height: 100%;
+}
+.project-card:hover{
+    transform: scale(1.05);
+}
+.style{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: var(--primary-dark);
+    padding: 2rem;
+    width: 30%;
+    height: 20%;
+    bottom: 5%;
+    right:3%;
+    font-size: 1.6rem;
+    word-spacing: .5rem;
+    padding: 1rem;
+    font-weight:600;
+    opacity: 0.9;
+    transition: all .4s ease;
+}
+
+.style a,.style p{
+    color: white;
+    display: none;
+}
+.style:hover{
+    background-color: var(--primary-color);
+    width: 90%;
+    height: 90%;
+    padding:5rem;
+    font-size: 3rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #fff;
+}
+.style:hover a{
+    display: unset;
+    position: absolute;
+    bottom: 10%;
+}
+.style:hover p{
+    display: unset;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+}
+/*  */
+.header{
+    position: relative;
+    padding: 1rem;
+    margin: 2rem;
+}
+.header::after{
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    top:.5rem;
+    border-bottom: 0.5rem solid var(--primary-color);
+}
+.header::before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 10%;
+    top: 1.2rem;
+    border:  0.5rem solid var(--primary-color);
+    border-bottom: none;
+}
+/* contact cards */
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:2rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+.contact-item .big{
+    font-size:2.5rem;
+    font-weight: 600;
+}
+.contact-info .contact-icon{
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--primary-dark);
+    padding:1.1vw;
+    display: inline-block;
+}
+.contact-info{
+    grid-column: 1;
+    grid-row: 1;
+}

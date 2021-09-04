@@ -1,0 +1,49 @@
+@media (max-width:1400px) {
+    #contact .contact-form{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:1100px) {
+    #home .welcome{
+        font-size: 3.5rem;
+    }
+    #home .static-text{
+        font-size: 3rem;
+    }
+    #home .changing-text li{
+        font-size: 3rem;
+    }
+}
+@media (max-width:876px) {
+    #nav{
+        position: absolute;
+        /* left:-20rem; */
+        /* display: none; */
+    }
+    html{
+        font-size: 8px !important;
+    }
+    .style{
+        font-size: 1.2rem !important;
+    }
+    .space{
+        display: none;
+    }
+    .container{
+        width: 100vw !important;
+    }
+    #website{
+        display: unset !important;
+    }
+    .expertise{
+        width:90vw;
+    }
+    .contact-item{
+        justify-content: flex-start !important;
+        font-size: 1.2rem !important;
+    }
+    .contact-item .contact-icon{
+        background: none !important;
+    }
+}
