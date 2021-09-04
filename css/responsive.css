@@ -73,4 +73,7 @@
         grid-column: 2/span 8;
         text-align: center;
     }
+    .hobbies{
+        width: 100%;
+    }
 }
