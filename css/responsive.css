@@ -76,4 +76,9 @@
     .hobbies{
         width: 100%;
     }
+    .front-end,.back-end,.python{
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
 }
