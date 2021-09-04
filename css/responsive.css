@@ -64,6 +64,9 @@
     }
     .projects-content{
         grid-template-columns: unset;
-        grid-template-rows: 40vh 40vh 40vh 40vh;
+        grid-template-rows: 40vh 40vh 30vh 30vh;
+    }
+    .checkers{
+        background-size: 100% 100% ;
     }
 }
