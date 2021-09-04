@@ -241,6 +241,9 @@
 .checkers{
     background: url(../img/resized-image-Promo.jpeg)no-repeat center center/cover;
 }
+.soon{
+    background: url(../img/coming\ soon.png)no-repeat center center/cover;
+}
 /* projects */
 .project-head{
     display: flex;
