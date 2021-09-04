@@ -15,12 +15,7 @@
         font-size: 3rem;
     }
 }
-@media (max-width:876px) {
-    #nav{
-        position: absolute;
-        /* left:-20rem; */
-        /* display: none; */
-    }
+@media (max-width:876px){
     html{
         font-size: 8px !important;
     }
@@ -45,5 +40,30 @@
     }
     .contact-item .contact-icon{
         background: none !important;
+    }
+    #website .hamburger-menu #nav{
+        left:-30rem;
+    }
+    .hamburger-menu{z-index: 4;}
+    .toggler:checked ~ #nav{
+        transition: all 1s ease;
+        transform: translateX(30rem) !important;
+        z-index: 1 !important;
+        width: 30rem !important;
+    }
+    .hamburger{z-index: 2 !important;}
+    .toggler{z-index: 20 !important;}
+}
+@media (max-width:576px) {
+    .expertise{
+        display: flex;
+        flex-direction: column;
+    }
+    .expertise .front-end{
+        border-right:none !important;
+    }
+    .projects-content{
+        grid-template-columns: unset;
+        grid-template-rows: 40vh 40vh 40vh 40vh;
     }
 }
