@@ -232,11 +232,11 @@
 .python a:hover{
     text-decoration: underline;
 }
-.tesla{
-    background: url(../img/tesla.png)no-repeat center center/cover;
+.minecraft{
+    background: url(../img/minecraft.png)no-repeat center center/cover;
 }
-.apple{
-    background: url(../img/apple-site.png)no-repeat center center/cover;
+.covid-19{
+    background: url(../img/covid-api.png)no-repeat center center/cover;
 }
 .checkers{
     background: url(../img/resized-image-Promo.jpeg)no-repeat center center/cover;
